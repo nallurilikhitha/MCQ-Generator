@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generated Questions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+
+        .mcq {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #007bff;
+            border-radius: 5px;
+            background-color: #e9f5ff;
+        }
+
+        .question {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .options {
+            margin-top: 10px;
+        }
+
+        .option {
+            margin: 5px 0;
+            padding: 5px;
+            background-color: #fff;
+            border: 1px solid #007bff;
+            border-radius: 4px;
+        }
+
+        .correct-answer {
+            font-weight: bold;
+            color: green;
+            margin-top: 10px;
+        }
+
+        .download-links {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .download-links a {
+            display: inline-block;
+            padding: 10px 15px;
+            margin: 5px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .download-links a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Generated Questions</h1>
+        <!-- Loop through the MCQs -->
+        {% for mcq in mcqs.split("## MCQ") %}
+        {% if mcq.strip() %}
+        <div class="mcq">
+            <!-- Check if it's a True/False question -->
+            {% if 'A) True' in mcq and 'B) False' in mcq %}
+            <div class="question">
+                {{ mcq.split('Question:')[1].split('A)')[0].strip() }}
+            </div>
+            <div class="options">
+                <div class="option">A) True</div>
+                <div class="option">B) False</div>
+            </div>
+            <div class="correct-answer">
+                Correct Answer: {{ mcq.split('Correct Answer:')[1].strip() }}
+            </div>
+
+            {% else %}
+            <!-- Display standard MCQ -->
+            <div class="question">
+                {{ mcq.split('Question:')[1].split('A)')[0].strip() }}
+            </div>
+            <div class="options">
+                {% if 'A)' in mcq %}
+                <div class="option">A) {{ mcq.split('A)')[1].split('B)')[0].strip() }}</div>
+                {% endif %}
+                {% if 'B)' in mcq %}
+                <div class="option">B) {{ mcq.split('B)')[1].split('C)')[0].strip() }}</div>
+                {% endif %}
+                {% if 'C)' in mcq %}
+                <div class="option">C) {{ mcq.split('C)')[1].split('D)')[0].strip() }}</div>
+                {% endif %}
+                {% if 'D)' in mcq %}
+                <div class="option">D) {{ mcq.split('D)')[1].split('Correct Answer:')[0].strip() }}</div>
+                {% endif %}
+            </div>
+            <div class="correct-answer">
+                Correct Answer: {{ mcq.split('Correct Answer:')[1].strip() }}
+            </div>
+            {% endif %}
+        </div>
+        {% endif %}
+        {% endfor %}
+
+        <div class="download-links">
+            <a href="/download/{{ txt_filename }}">Download as TXT</a>
+            <a href="/download/{{ pdf_filename }}">Download as PDF</a>
+        </div>
+    </div>
+</body>
+
+</html>

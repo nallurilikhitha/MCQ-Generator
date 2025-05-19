@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCQ Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .container {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 10px 20px;
+            background-color: #121212;
+        }
+
+        .logo img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            top: 40%;
+        }
+
+        .user-name {
+            background-color: #333;
+            color: #fff;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 600px;
+            padding: 20px;
+        }
+
+        #prompt {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #fff;
+            border-radius: 5px;
+            background-color: #222;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        button {
+            padding: 10px 15px;
+            border: 2px solid #fff;
+            background-color: #333;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        #number-of-questions {
+            padding: 10px;
+            border: 2px solid #fff;
+            border-radius: 5px;
+            background-color: #222;
+            color: #fff;
+            width: 150px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .buttons {
+                flex-direction: column;
+            }
+
+            button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="data:image/png;base64,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"
+                alt="Logo">
+        </div>
+        <div class="user-name">User</div>
+    </div>
+    <div class="container">
+        <div class="content">
+            <input type="text" id="prompt" placeholder="Enter prompt">
+            <div class="buttons">
+                <label for="file">Upload your document (PDF, TXT, DOCX):</label>
+                <input type="file" name="file" required>
+                <input type="number" id="number-of-questions" placeholder="No. of questions">
+                <button id="generate-mcqs">Generate MCQs</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('generate-mcqs').addEventListener('click', () => {
+            const prompt = document.getElementById('prompt').value;
+            const numberOfQuestions = document.getElementById('number-of-questions').value;
+
+            if (prompt && numberOfQuestions) {
+                alert(`Generating ${numberOfQuestions} MCQs for the prompt: "${prompt}"`);
+            } else {
+                alert('Please fill in all fields.');
+            }
+        });
+    </script>
+</body>
+
+</html>

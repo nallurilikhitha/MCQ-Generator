@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickQuiz</title>
+    <style>
+        /* Global Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSwWPcqsemZMVuEHh-FLJBpOJmGT3uy7zkBw&s') no-repeat center center fixed;
+            background-size: cover;
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        /* Title Section */
+        .title {
+            font-size: 5rem;
+            font-weight: bold;
+            color: black;
+            font-family: 'Comic Sans MS', cursive;
+            position: absolute;
+            top: 9%;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+        }
+
+        /* About Section */
+        .about-section {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+            text-align: center;
+            position: absolute;
+            top: 55%;
+            left: 52%;
+            transform: translate(-50%, 0);
+        }
+
+        .about-section p {
+            font-size: 1.3rem;
+            line-height: 2rem;
+            color: #04071a;
+            max-width: 900px;
+        }
+
+        /* Button Section */
+        .login-btn {
+            position: absolute;
+            right: 42%;
+            top: 45%;
+            transform: translateY(-50%);
+            padding: 20px 60px;
+            font-size: 2rem;
+            font-weight: bold;
+            color: #f6f5f6;
+            background: #180c13;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            box-shadow: 0 6px 8px rgba(214, 248, 252, 0.988);
+        }
+
+        .login-btn:hover {
+            background: #444;
+        }
+
+        /* Footer Section */
+        footer {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 10px 20px;
+            text-align: center;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            font-size: 1rem;
+            color: #333;
+        }
+
+        /* Avatar Styling */
+
+
+        .avatar-bottom {
+            position: absolute;
+            bottom: 35%;
+            left: 9%;
+            height: 30%;
+            opacity: 5;
+        }
+
+        img {
+            display: block;
+            height: 100%;
+            width: auto;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 class="title">QuickQuiz</h1>
+
+    <button class="login-btn" id="login" href="index.html">Login</button>
+
+    <div class="about-section" id="about">
+        <p>
+
+            Welcome to QuickQuiz, an innovative platform designed to revolutionize learning through automated MCQ
+            generation.
+            Whether you're a student, teacher, or lifelong learner, QuickQuiz helps you create tailored
+            MCQs from any concept or text in seconds.
+        </p>
+    </div>
+
+    <!-- Avatars -->
+
+
+
+
+
+    <script>
+        function handleLogin() {
+            alert("Login button clicked! Redirecting...");
+            window.location.href = "login.html"; // Example redirection
+        }
+    </script>
+</body>
+
+</html>
