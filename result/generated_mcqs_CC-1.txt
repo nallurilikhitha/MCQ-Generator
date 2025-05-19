@@ -1,0 +1,337 @@
+## MCQ 1
+Question: What shift in computing paradigm has been driven by the increasing demand for Internet services?
+A) From High-Throughput Computing (HTC) to High-Performance Computing (HPC)
+B) From Centralized Computing to Distributed Computing
+C) From High-Performance Computing (HPC) to High-Throughput Computing (HTC)
+D) From Parallel Computing to Cloud Computing
+Correct Answer: C
+
+## MCQ 2
+Question: According to the text, what is a major challenge for HTC technology?
+A) Increasing batch processing speed only
+B) Addressing cost, energy, security, and reliability issues
+C) Focusing solely on raw speed performance
+D) Limiting the number of concurrent users
+Correct Answer: B
+
+## MCQ 3
+Question: Who declared, "The network is the computer"?
+A) Leonard Klienrock
+B) John Gage
+C) David Patterson
+D) Rajkumar Buyya
+Correct Answer: B
+
+## MCQ 4
+Question: Which computing paradigm utilizes all computer resources centralized in one physical system?
+A) Parallel computing
+B) Distributed computing
+C) Cloud computing
+D) Centralized computing
+Correct Answer: D
+
+## MCQ 5
+Question:  Which type of parallelism involves executing multiple instructions simultaneously?
+A) Bit-level parallelism (BLP)
+B) Instruction-level parallelism (ILP)
+C) Data-level parallelism (DLP)
+D) Task-level parallelism (TLP)
+Correct Answer: B
+
+## MCQ 6
+Question: What is a major challenge in achieving successful Task-level parallelism (TLP)?
+A) Hardware limitations
+B) Compiler limitations
+C) Programming and compilation complexity
+D) Lack of theoretical understanding
+Correct Answer: C
+
+## MCQ 7
+Question: What does IoT stand for?
+A) Internet of Things
+B) Interconnected Operating Technologies
+C) Integrated Online Transactions
+D) International Organization of Telecommunications
+Correct Answer: A
+
+## MCQ 8
+Question:  What does the unit "GE" refer to in the context of network bandwidth?
+A) Giga Ethernet
+B) General Electric
+C) Global Environment
+D) Graphical Element
+Correct Answer: A
+
+## MCQ 9
+Question: Which technology is mentioned as addressing the limitations of CPUs in exploiting massive DLP?
+A) Multicore CPUs
+B) Many-core GPUs
+C) SSDs
+D) System-Area Interconnects
+Correct Answer: B
+
+## MCQ 10
+Question: What is a major advantage of SSDs over traditional hard drives?
+A) Lower cost
+B) Higher capacity
+C) Increased speed
+D) Lower power consumption
+Correct Answer: C
+
+## MCQ 11
+Question: Which network connects servers to network storage like disk arrays?
+A) LAN
+B) SAN
+C) NAS
+D) VPN
+Correct Answer: B
+
+## MCQ 12
+Question: What is the middleware layer between VMs and the host platform called?
+A) Virtual Machine Manager (VMM)
+B) Virtual Infrastructure
+C) Guest OS
+D) Host OS
+Correct Answer: A
+
+## MCQ 13
+Question: What is a bare-metal VM?
+A) A VM without an OS
+B) A VM running directly on the hardware
+C) A VM with minimal resources
+D) A VM used for testing purposes
+Correct Answer: B
+
+## MCQ 14
+Question: Which VM operation involves moving a VM from one hardware platform to another?
+A) Multiplexing
+B) Suspension
+C) Resumption
+D) Migration
+Correct Answer: D
+
+## MCQ 15
+Question: According to a 2009 IDC report, what percentage of data center costs is attributed to IT equipment purchases?
+A) 60%
+B) 33%
+C) 30%
+D) 18%
+Correct Answer: C
+
+## MCQ 16
+Question: What does SSI stand for in the context of cluster computing?
+A) Single-System Image
+B) Scalable System Integration
+C) Secure System Infrastructure
+D) Standardized System Interface
+Correct Answer: A
+
+
+## MCQ 17
+Question: What are MPPs?
+A) Massively Parallel Processors
+B) Multi-Purpose Platforms
+C) Managed Processing Pools
+D) Modular Programming Paradigms
+Correct Answer: A
+
+## MCQ 18
+Question: What is the primary function of a computing grid?
+A) To connect clients to a central server
+B) To enable close interaction between applications on distant computers
+C) To share files between peers
+D) To provide virtualized resources on demand
+Correct Answer: B
+
+
+## MCQ 19
+Question: What is the main difference between a P2P network and a client-server architecture?
+A) P2P is server-oriented, while client-server is client-oriented
+B) P2P is client-oriented, while client-server is server-oriented
+C) P2P uses centralized resources, while client-server uses distributed resources
+D) P2P is used for large-scale computations, while client-server is used for small-scale tasks
+Correct Answer: B
+
+
+## MCQ 20
+Question: What is an overlay network in a P2P system?
+A) A physical network connecting all peers
+B) A logical network formed by peer IDs based on communication needs
+C) A secure network used for protecting copyrighted content
+D) A network used for connecting P2P networks to the Internet
+Correct Answer: B
+
+
+## MCQ 21
+Question: What is a key characteristic of cloud computing?
+A) Static resource allocation
+B) Limited scalability
+C) On-demand resource provisioning
+D) Tight coupling between hardware and software
+Correct Answer: C
+
+## MCQ 22
+Question: Which cloud service model provides users with access to infrastructure resources like servers and storage?
+A) IaaS
+B) PaaS
+C) SaaS
+D) DaaS
+Correct Answer: A
+
+## MCQ 23
+Question: Which cloud service model focuses on delivering browser-initiated application software?
+A) IaaS
+B) PaaS
+C) SaaS
+D) DaaS
+Correct Answer: C
+
+
+## MCQ 24
+Question: What does SOA stand for?
+A) Service-Oriented Architecture
+B) Software-Oriented Application
+C) System-Oriented Approach
+D) Security-Oriented Administration
+Correct Answer: A
+
+
+## MCQ 25
+Question: What is the function of filter services (fs) in an SOA?
+A) To collect raw data from sensors
+B) To process and analyze raw data
+C) To eliminate unwanted raw data
+D) To store processed data in a database
+Correct Answer: C
+
+
+## MCQ 26
+Question: What is a key difference between grids and clouds?
+A) Grids emphasize elastic resources, while clouds apply static resources.
+B) Grids apply static resources, while clouds emphasize elastic resources.
+C) Grids are only used for scientific computing, while clouds are used for business applications.
+D) Grids are based on centralized computing, while clouds are based on distributed computing.
+Correct Answer: B
+
+
+## MCQ 27
+Question: What is a major advantage of a distributed OS?
+A) Increased system overhead
+B) Reduced resource sharing
+C) Coherent and efficient resource management
+D) Increased complexity in application development
+Correct Answer: C
+
+## MCQ 28
+Question: What unit is commonly used to measure system throughput?
+A) MIPS
+B) Mbps
+C) GE
+D) GB
+Correct Answer: A
+
+## MCQ 29
+Question: Which dimension of scalability refers to upgrading the OS or compilers?
+A) Size scalability
+B) Software scalability
+C) Application scalability
+D) Technology scalability
+Correct Answer: B
+
+## MCQ 30
+Question: What does MTTF stand for?
+A) Mean Time To Failure
+B) Maximum Time To Finish
+C) Minimum Time To Fix
+D) Mean Time To Freeze
+Correct Answer: A
+
+
+## MCQ 31
+Question: What is a single point of failure?
+A) A failure that affects a single component of the system
+B) A failure that can be easily repaired
+C) A failure that pulls down the operation of the entire system
+D) A failure that occurs frequently
+Correct Answer: C
+
+
+## MCQ 32
+Question: What is a Denial of Service (DoS) attack?
+A) An attack that leaks confidential information
+B) An attack that alters user data
+C) An attack that results in a loss of system operation
+D) An attack that installs a Trojan horse
+Correct Answer: C
+
+
+## MCQ 33
+Question:  What is collusive piracy?
+A) Illegal sharing of copyrighted content within a P2P network
+B) Downloading copyrighted content from a central server
+C) Copying software without a license
+D) Distributing pirated movies on physical media
+Correct Answer: A
+
+
+## MCQ 34
+Question: What does DPM stand for in the context of energy efficiency?
+A) Distributed Power Management
+B) Dynamic Performance Monitoring
+C) Data Processing Module
+D) Digital Power Meter
+Correct Answer: A
+
+
+## MCQ 35
+Question: According to the text, what percentage of servers in a company are estimated to be idling on a daily basis?
+A) 5%
+B) 15%
+C) 30%
+D) 60%
+Correct Answer: B
+
+
+## MCQ 36
+Question: What is the primary goal of reducing energy in active servers?
+A) To improve system performance
+B) To decrease energy consumption with minimal impact on performance
+C) To reduce the cost of hardware
+D) To increase the lifespan of servers
+Correct Answer: B
+
+
+## MCQ 37
+Question: Which benchmark is mentioned as no longer optimal for measuring system performance in the age of internet computing?
+A) SPECint
+B) Dhrystone
+C) Whetstone
+D) Linpack
+Correct Answer: D
+
+
+## MCQ 38
+Question:  What technology enables the dynamic mapping of system resources to specific applications in a virtual infrastructure?
+A) Cloud computing
+B) Virtualization
+C) Grid computing
+D) Parallel computing
+Correct Answer: B
+
+
+## MCQ 39
+Question: What triggered the development of the Internet of Things (IoT)?
+A) The introduction of the internet
+B) The maturity of RFID, GPS, and sensor technologies
+C) The development of cloud computing
+D) The increase in demand for HPC
+Correct Answer: B
+
+
+## MCQ 40
+Question:  What is the main purpose of a hypervisor?
+A) To manage virtual machines
+B) To connect to the internet
+C) To run applications
+D) To store data
+Correct Answer: A

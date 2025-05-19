@@ -1,0 +1,33 @@
+## MCQ
+Question: The fruits of the Shakespear tree had a golden shimmer.
+A) True
+B) False
+Correct Answer: True
+
+
+## MCQ
+Question: The villagers of Eldermere believed the Shakespear tree was cursed.
+A) True
+B) False
+Correct Answer: False
+
+
+## MCQ
+Question: Emma's dream was to become a writer.
+A) True
+B) False
+Correct Answer: True
+
+
+## MCQ
+Question: Eating the Shakespear fruit caused Emma to fall asleep.
+A) True
+B) False
+Correct Answer: False
+
+
+## MCQ
+Question:  Emma's actions resulted in Eldermere becoming a center for storytelling.
+A) True
+B) False
+Correct Answer: True
